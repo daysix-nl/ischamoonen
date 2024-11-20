@@ -1,0 +1,27 @@
+{
+  "name": "acf-nieuws-slider-1",
+  "title": "Nieuws slider 1",
+  "description": "",
+  "category": "bibliotheek",
+  "icon": "slides",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-nieuws-slider-1.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/ischamoonen/img/local/leeg.png",
+        "is_preview": true
+      }
+    }
+  }
+}
