@@ -1,9 +1,9 @@
 {
-  "name": "acf-nieuws-slider-1",
-  "title": "Nieuws slider 1",
+  "name": "acf-case-information",
+  "title": "Case information",
   "description": "",
   "category": "bibliotheek",
-  "icon": "slides",
+  "icon": "editor-ul",
   "keywords": [
     "block"
   ],
@@ -13,13 +13,13 @@
   },
   "acf": {
     "mode": "preview",
-    "renderTemplate": "acf-nieuws-slider-1.php"
+    "renderTemplate": "acf-case-information.php"
   },
   "example": {
     "attributes": {
       "mode": "preview",
       "data": {
-        "preview_image_help": "/wp-content/themes/ischamoonen/img/local/leeg.png",
+        "preview_image_help": "/wp-content/themes/ischamoonen/img/preview-images/leeg.jpeg",
         "is_preview": true
       }
     }

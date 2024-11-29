@@ -1,0 +1,30 @@
+// .element-fade-in {
+//     &.show {
+//         span {
+//             display: inline-block;
+//             overflow: hidden;
+//             animation: .2s swift-up cubic-bezier(0.43, 0.23, 0.11, 0.88) forwards;
+//         }
+
+//         i {
+//             font-style: normal;
+//             position: relative;
+//             top: 8vw;
+//             animation: .8s swift-up cubic-bezier(0.43, 0.23, 0.11, 0.88) forwards;
+
+//         }
+//     }
+// }
+
+// @keyframes swift-up {
+//     to {
+//         top: 0;
+//     }
+// }
+
+
+.contact-fade-in {
+    position: relative;
+    transform: scale(0.8);
+    will-change: transform;
+}

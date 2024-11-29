@@ -1,0 +1,29 @@
+.read-more {
+    span#more {
+        display: block;
+    }
+
+    span#less {
+        display: none;
+    }
+
+    svg {
+        rotate: 0deg;
+        transition-duration: .2s;
+    }
+}
+
+.read-less {
+    span#more {
+        display: none;
+    }
+
+    span#less {
+        display: block;
+    }
+
+    svg {
+        rotate: -180deg;
+        transition-duration: .2s;
+    }
+}

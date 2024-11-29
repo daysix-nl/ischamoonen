@@ -1,0 +1,149 @@
+/* Menu Button 6 */
+.menu-btn {
+    height: 26px;
+    width: 3.56234096692112vw;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+        width: 1.82291666666667vw;
+        height: 30px;
+    }
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    background: #1E1E1E;
+    content: '';
+    position: absolute;
+    width: 3.56234096692112vw;
+    height: 1px;
+    border-radius: 999px;
+    margin-top: 13px;
+
+    @media (min-width: 768px) {
+        width: 1.82291666666667vw;
+    }
+
+    -webkit-transition: .3s ease-in-out .3s;
+    -moz-transition: .3s ease-in-out .3s;
+    -o-transition: .3s ease-in-out .3s;
+    transition: .3s ease-in-out .3s;
+}
+
+.menu-btn span::before {
+    margin-top: -1.01781170483461vw;
+
+    @media (min-width: 768px) {
+        margin-top: -0.520833333333333vw;
+    }
+
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.menu-btn span::after {
+    margin-top: 1.01781170483461vw;
+
+    @media (min-width: 768px) {
+        margin-top: 0.520833333333333vw;
+    }
+
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+p.menu {
+
+    top: 0px;
+    transition-delay: .3s;
+    transition-duration: .3s;
+}
+
+p.sluiten {
+
+    top: 22.5px;
+    transition-delay: .3s;
+    transition-duration: .3s;
+}
+
+#mobilemenu {
+    right: -100%;
+    transition: all .4s ease;
+}
+
+.mobilemenu-active {
+    overflow-y: hidden;
+
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after {
+        background: #fff;
+    }
+
+    #mobilemenu {
+        right: 0px;
+        transition: all .4s ease;
+    }
+
+    p.menu {
+
+        top: -22.5px;
+        transition-delay: .3s;
+        transition-duration: .3s;
+    }
+
+    p.sluiten {
+
+        top: 0px;
+        transition-delay: .3s;
+        transition-duration: .3s;
+
+    }
+
+    .menu-btn span {
+        background: transparent;
+
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .menu-btn span::before {
+        margin-top: 0;
+
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+
+        -webkit-transition-delay: .5s;
+        -moz-transition-delay: .5s;
+        -o-transition-delay: .5s;
+        transition-delay: .5s;
+    }
+
+    .menu-btn span::after {
+        margin-top: 0;
+
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+
+        -webkit-transition-delay: .6s;
+        -moz-transition-delay: .6s;
+        -o-transition-delay: .6s;
+        transition-delay: .5s;
+    }
+}

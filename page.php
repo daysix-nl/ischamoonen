@@ -7,7 +7,7 @@
 
 
 get_header(); ?>
-<main>
+<main class="bg-[#FFFCF3]">
     <?php the_content(); ?>
 </main>
 <?php get_footer(); ?>

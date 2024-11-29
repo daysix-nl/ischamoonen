@@ -80,13 +80,13 @@ add_filter('block_categories_all', function ($categories) {
 
     array_unshift($categories,   
       [
-        'slug'  => 'achtergrond',
-        'title' => 'Achtergronden',
+        'slug'  => 'pages',
+        'title' => 'Pages',
         'icon'  => null
     ],        
     [
         'slug'  => 'bibliotheek',
-        'title' => 'Pagina secties',
+        'title' => 'Modular blocks',
         'icon'  => null
     ],  
     [
@@ -315,7 +315,7 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 function custom_frontend_translations($translated_text, $text, $domain) {
     switch ($text) {
             case 'Re-Order':
-            $translated_text = 'Volgorde';
+            $translated_text = 'Sort cases';
             break;
              case 'Reset all':
             $translated_text = 'Reset alle filters';

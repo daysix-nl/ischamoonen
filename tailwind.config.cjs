@@ -28,7 +28,8 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        "tanker": ["Tanker", "sans-serif"],
+        "gilda": ["Gilda Display", "serif"],
+        "helvetica": ["Helvetica Neue", "sans-serif"],
       },
       colors: {
         white: "#FFFFFF",

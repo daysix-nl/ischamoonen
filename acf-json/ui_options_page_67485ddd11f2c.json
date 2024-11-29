@@ -1,0 +1,26 @@
+{
+    "key": "ui_options_page_67485ddd11f2c",
+    "title": "Company settings",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Company settings",
+    "menu_slug": "company-settings",
+    "parent_slug": "none",
+    "advanced_configuration": 1,
+    "icon_url": "",
+    "menu_title": "",
+    "position": "",
+    "redirect": 0,
+    "description": "",
+    "menu_icon": {
+        "type": "dashicons",
+        "value": "dashicons-edit-large"
+    },
+    "update_button": "Update",
+    "updated_message": "Options Updated",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1732795987
+}
