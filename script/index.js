@@ -86,7 +86,7 @@ try {
     // Hover-effect voor links
     links.forEach(link => {
         link.addEventListener('mouseenter', () => {
-            cursor.textContent = 'View project'; // Toon tekst van de link
+            cursor.textContent = 'View case'; // Toon tekst van de link
             cursor.style.padding = '0px 20px';
             cursor.style.borderRadius = '999px';
             cursor.style.height = '50px';
