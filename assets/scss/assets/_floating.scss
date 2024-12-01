@@ -1,26 +1,56 @@
-// .element-fade-in {
-//     &.show {
-//         span {
-//             display: inline-block;
-//             overflow: hidden;
-//             animation: .2s swift-up cubic-bezier(0.43, 0.23, 0.11, 0.88) forwards;
-//         }
+.element-fade-in {
+    &.show {
+        span {
+            display: inline-flex;
+            overflow: hidden;
+            animation: 0s swift-up cubic-bezier(0.43, 0.23, 0.11, 0.88) forwards;
+        }
 
-//         i {
-//             font-style: normal;
-//             position: relative;
-//             top: 8vw;
-//             animation: .8s swift-up cubic-bezier(0.43, 0.23, 0.11, 0.88) forwards;
+        span.i {
+            font-style: normal;
+            position: relative;
+            top: 1.2em;
+            animation: .6s swift-up cubic-bezier(0.43, 0.23, 0.11, 0.88) forwards;
 
-//         }
-//     }
-// }
+        }
+    }
+}
 
-// @keyframes swift-up {
-//     to {
-//         top: 0;
-//     }
-// }
+@keyframes swift-up {
+    to {
+        top: 0;
+    }
+}
+
+.element-fade-in {
+    .block-fade-in {
+        opacity: 0;
+        transition-duration: 0s;
+        transform: translateY(20px);
+
+        @for $i from 2 through 100 {
+            &:nth-of-type(#{$i}) {
+                transition-delay: 0s * $i;
+            }
+        }
+    }
+
+    &.show {
+        .block-fade-in {
+            opacity: 1;
+            transition-duration: .7s;
+
+            transform: translateY(0);
+
+            @for $i from 2 through 100 {
+                &:nth-of-type(#{$i}) {
+                    transition-delay: .1s * $i;
+                }
+            }
+        }
+    }
+}
+
 
 
 .contact-fade-in {

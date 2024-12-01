@@ -1,37 +1,47 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const swiftUpElements = document.querySelectorAll('.swift-up-text');
+    console.log(`Aantal swift-up-text elementen: ${swiftUpElements.length}`); // Debugging
 
-// const swiftUpElements = document.querySelectorAll('.swift-up-text');
+    try {
+        swiftUpElements.forEach(elem => {
+            if (elem.dataset.processed) return; // Skip als het al verwerkt is
+            elem.dataset.processed = true; // Markeer als verwerkt
 
-// swiftUpElements.forEach(elem => {
+            const words = elem.textContent.split(' ');
+            elem.innerHTML = '';
 
-//     const words = elem.textContent.split(' ');
-//     elem.innerHTML = '';
+            words.forEach((word, index) => {
+                words[index] = `<span><span class="i">${word}</span></span>`;
+            });
 
-//     words.forEach((el, index) => {
-//         words[index] = `<span><i>${words[index]}</i></span>`;
-//     });
+            elem.innerHTML = words.join(' ');
 
-//     elem.innerHTML = words.join(' ');
+            const children = elem.querySelectorAll('span > span');
+            children.forEach((node, index) => {
+                node.style.animationDelay = `${index * 0.02}s`;
+            });
+        });
+    } catch (error) {
+        console.error("Error in swiftUpElements processing:", error);
+    }
 
-//     const children = document.querySelectorAll('span > i');
-//     children.forEach((node, index) => {
-//         node.style.animationDelay = `${index * .04}s`;
-//     });
+    try {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    console.log(`Element in zicht: ${entry.target}`); // Debugging
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target); // Stop observer voor dit element
+                }
+            });
+        });
 
-// });
-
-
-// try {
-//     const observer = new IntersectionObserver((entries) => {
-//         entries.forEach((entry) => {
-//             if (entry.isIntersecting) {
-//                 entry.target.classList.add("show");
-//             }
-//         });
-//     });
-
-//     const hiddenElements = document.querySelectorAll(".element-fade-in");
-//     hiddenElements.forEach((el) => observer.observe(el));
-// } catch (error) { }
+        const hiddenElements = document.querySelectorAll(".element-fade-in");
+        hiddenElements.forEach((el) => observer.observe(el));
+    } catch (error) {
+        console.error("Error in IntersectionObserver:", error);
+    }
+});
 
 
 
@@ -226,5 +236,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+// document.querySelectorAll('.animated-text').forEach(p => {
+//     const lines = p.innerText.split('\n');
+//     p.innerHTML = lines
+//         .map((line, index) => `<span style="--line-index: ${index}">${line}</span>`)
+//         .join('');
+// });
 
 

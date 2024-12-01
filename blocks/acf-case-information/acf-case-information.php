@@ -34,9 +34,9 @@ else: ?>
  </section>
  <section class="mt-[7.63358778625954vw] md:mt-[7.8125vw] lg:mt-[4.6875vw] mb-[12.7226463104326vw] md:mb-[5.46875vw] lg:mb-[3.28125vw]">
     <div class="w-[83.4605597964377vw] md:w-[87.5vw] lg:w-[82.96875vw] mx-auto">
-        <div class="md:hidden">
+        <div class="element-fade-in md:hidden">
             <div class="accordion-group">
-                <div class="accordion-item">
+                <div class="block-fade-in accordion-item">
                     <button class="accordion text-left">
                         <span class="text-[2.54452926208651vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] font-normal text-[#1E1E1E] uppercase my-[5.85241730279898vw]">The challange</span>
                     </button>
@@ -47,7 +47,7 @@ else: ?>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="block-fade-in accordion-item">
                     <button class="accordion text-left">
                         <span class="text-[2.54452926208651vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] font-normal text-[#1E1E1E] uppercase my-[5.85241730279898vw]">The approach</span>
                     </button>
@@ -58,7 +58,7 @@ else: ?>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="block-fade-in accordion-item">
                     <button class="accordion text-left">
                         <span class="text-[2.54452926208651vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] font-normal text-[#1E1E1E] uppercase my-[5.85241730279898vw]">The outcome</span>
                     </button>
@@ -74,18 +74,18 @@ else: ?>
             <hr class="border-[#000]">
         </div>
 
-        <div class="flex-wrap justify-between hidden md:flex">
-            <div class="w-[83.4605597964377vw] md:w-[26.0416666666667vw] lg:w-[23.4375vw]">
+        <div class="element-fade-in flex-wrap justify-between hidden md:flex">
+            <div class="block-fade-in w-[83.4605597964377vw] md:w-[26.0416666666667vw] lg:w-[23.4375vw]">
                 <h3 class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw] leading-[3.56234096692112vw] md:leading-[1.82291666666667vw] lg:leading-[1.09375vw] font-medium text-[#1E1E1E] uppercase">The challange</h3>
                 <hr class="md:my-[2.47395833333333vw] lg:my-[1.484375vw] border-[#000]">
                 <p class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.9375vw] w-[73.2824427480916vw] md:w-[27.4vw] lg:w-[23.2375vw] font-light text-[#1E1E1E]"><?php echo get_field('the_challenge_text');?></p>
             </div>
-            <div class="w-[83.4605597964377vw] md:w-[26.0416666666667vw] lg:w-[23.4375vw]">
+            <div class="block-fade-in w-[83.4605597964377vw] md:w-[26.0416666666667vw] lg:w-[23.4375vw]">
                 <h3 class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw] leading-[3.56234096692112vw] md:leading-[1.82291666666667vw] lg:leading-[1.09375vw] font-medium text-[#1E1E1E] uppercase">The approach</h3>
                 <hr class="md:my-[2.47395833333333vw] lg:my-[1.484375vw] border-[#000]">
                 <p class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.9375vw] w-[73.2824427480916vw] md:w-[27.4vw] lg:w-[23.2375vw] font-light text-[#1E1E1E]"><?php echo get_field('the_approach_text');?></p>
             </div>
-            <div class="w-[83.4605597964377vw] md:w-[26.0416666666667vw] lg:w-[23.4375vw]">
+            <div class="block-fade-in w-[83.4605597964377vw] md:w-[26.0416666666667vw] lg:w-[23.4375vw]">
                 <h3 class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw] leading-[3.56234096692112vw] md:leading-[1.82291666666667vw] lg:leading-[1.09375vw] font-medium text-[#1E1E1E] uppercase">The outcome</h3>
                 <hr class="md:my-[2.47395833333333vw] lg:my-[1.484375vw] border-[#000]">
                 <p class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.9375vw] w-[73.2824427480916vw] md:w-[27.4vw] lg:w-[23.2375vw] font-light text-[#1E1E1E]"><?php echo get_field('the_outcome_text');?></p>
