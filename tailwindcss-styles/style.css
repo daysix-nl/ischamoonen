@@ -533,6 +533,9 @@ video {
 .order-3 {
   order: 3;
 }
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
 .mx-\[5\.08905852417303vw\] {
   margin-left: 5.08905852417303vw;
   margin-right: 5.08905852417303vw;

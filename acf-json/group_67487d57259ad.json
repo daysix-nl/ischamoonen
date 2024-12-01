@@ -20,6 +20,7 @@
                 "one": "One",
                 "two": "Two",
                 "three": "Three",
+                "four": "Four",
                 "five": "Five"
             },
             "default_value": "one",
@@ -33,7 +34,7 @@
         },
         {
             "key": "field_67487d579131a",
-            "label": "Image",
+            "label": "Image1",
             "name": "image_1",
             "aria-label": "",
             "type": "image",
@@ -67,10 +68,17 @@
                         "operator": "==",
                         "value": "five"
                     }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "four"
+                    }
                 ]
             ],
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -87,8 +95,65 @@
             "preview_size": "thumbnail"
         },
         {
+            "key": "field_674c6bd56dcac",
+            "label": "Video 1",
+            "name": "video_1",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "one"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "two"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "three"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "four"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "five"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": 100,
+            "mime_types": "mp4",
+            "allow_in_bindings": 0
+        },
+        {
             "key": "field_67487df72bf41",
-            "label": "Image",
+            "label": "Image 2",
             "name": "image_2",
             "aria-label": "",
             "type": "image",
@@ -115,10 +180,17 @@
                         "operator": "==",
                         "value": "five"
                     }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "four"
+                    }
                 ]
             ],
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -135,8 +207,58 @@
             "preview_size": "thumbnail"
         },
         {
+            "key": "field_674c6bf36dcad",
+            "label": "Video 2",
+            "name": "video_2",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "two"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "three"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "four"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "five"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": 100,
+            "mime_types": "mp4",
+            "allow_in_bindings": 0
+        },
+        {
             "key": "field_67487df92bf42",
-            "label": "Image",
+            "label": "Image 3",
             "name": "image_3",
             "aria-label": "",
             "type": "image",
@@ -156,10 +278,17 @@
                         "operator": "==",
                         "value": "five"
                     }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "four"
+                    }
                 ]
             ],
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -176,8 +305,51 @@
             "preview_size": "thumbnail"
         },
         {
+            "key": "field_674c6bf76dcae",
+            "label": "Video 3",
+            "name": "video_3",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "three"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "four"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "five"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": 100,
+            "mime_types": "mp4",
+            "allow_in_bindings": 0
+        },
+        {
             "key": "field_67487dfc2bf43",
-            "label": "Image",
+            "label": "Image 4",
             "name": "image_4",
             "aria-label": "",
             "type": "image",
@@ -190,10 +362,17 @@
                         "operator": "==",
                         "value": "five"
                     }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "four"
+                    }
                 ]
             ],
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -210,8 +389,44 @@
             "preview_size": "thumbnail"
         },
         {
+            "key": "field_674c6bfa6dcaf",
+            "label": "Video 4",
+            "name": "video_4",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "four"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "five"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": 100,
+            "mime_types": "mp4",
+            "allow_in_bindings": 0
+        },
+        {
             "key": "field_67487dfe2bf44",
-            "label": "Image",
+            "label": "Image 5",
             "name": "image_5",
             "aria-label": "",
             "type": "image",
@@ -227,7 +442,7 @@
                 ]
             ],
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -242,6 +457,35 @@
             "mime_types": "",
             "allow_in_bindings": 0,
             "preview_size": "thumbnail"
+        },
+        {
+            "key": "field_674c6bfe6dcb0",
+            "label": "Video 5",
+            "name": "video_5",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67487d719131b",
+                        "operator": "==",
+                        "value": "five"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": 100,
+            "mime_types": "mp4",
+            "allow_in_bindings": 0
         }
     ],
     "location": [
@@ -262,5 +506,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1732804423
+    "modified": 1733062627
 }
