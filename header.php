@@ -50,9 +50,9 @@
         </div>
         <div class="h-full w-[30.2798982188295vw] md:w-[15.4947916666667vw] lg:w-[25.78125vw] flex items-center justify-end">
             <nav class="hidden lg:flex w-full items-center justify-between">
-                <a href="/#services" class="text-[0.9375vw] text-[#1E1E1E] font-medium font-helvetica uppercase">Services</a>
-                <a href="/#about" class="text-[0.9375vw] text-[#1E1E1E] font-medium font-helvetica uppercase">About</a>
-                <a href="/#contact" class="text-[0.9375vw] text-[#1E1E1E] font-medium font-helvetica uppercase">Contact</a>
+                <a href="/#services" class="text-[0.9375vw] text-[#1E1E1E] font-medium font-helvetica uppercase tracking-wider">Services</a>
+                <a href="/#about" class="text-[0.9375vw] text-[#1E1E1E] font-medium font-helvetica uppercase tracking-wider">About</a>
+                <a href="/#contact" class="text-[0.9375vw] text-[#1E1E1E] font-medium font-helvetica uppercase tracking-wider">Contact</a>
             </nav>
         </div>
     </div>
@@ -70,16 +70,16 @@
          <div class="h-[75px]"></div>
          <div class="w-full h-[calc(100dvh-75px)] overflow-y-scroll">
             <nav class="grid w-[41.2213740458015vw] md:w-[20.9635416666667vw] mx-auto">
-                <a href="/#work" class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] text-white font-medium uppercase py-[7.63358778625954vw] md:py-[3.90625vw] pl-[3.30788804071247vw] md:pl-[1.69270833333333vw]">Work</a>
+                <a href="/#work" class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] text-white font-medium uppercase py-[7.63358778625954vw] md:py-[3.90625vw] pl-[3.30788804071247vw] md:pl-[1.69270833333333vw] tracking-wider">Work</a>
                 <hr>
              
-                <a href="/#services" class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] text-white font-medium uppercase py-[7.63358778625954vw] md:py-[3.90625vw] pl-[3.30788804071247vw] md:pl-[1.69270833333333vw]">Services</a>
+                <a href="/#services" class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] text-white font-medium uppercase py-[7.63358778625954vw] md:py-[3.90625vw] pl-[3.30788804071247vw] md:pl-[1.69270833333333vw] tracking-wider">Services</a>
                 <hr>
         
-                <a href="/#about" class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] text-white font-medium uppercase py-[7.63358778625954vw] md:py-[3.90625vw] pl-[3.30788804071247vw] md:pl-[1.69270833333333vw]">About</a>
+                <a href="/#about" class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] text-white font-medium uppercase py-[7.63358778625954vw] md:py-[3.90625vw] pl-[3.30788804071247vw] md:pl-[1.69270833333333vw] tracking-wider">About</a>
                 <hr>
         
-                <a href="/#contact" class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] text-white font-medium uppercase py-[7.63358778625954vw] md:py-[3.90625vw] pl-[3.30788804071247vw] md:pl-[1.69270833333333vw]">Contact</a>
+                <a href="/#contact" class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] text-white font-medium uppercase py-[7.63358778625954vw] md:py-[3.90625vw] pl-[3.30788804071247vw] md:pl-[1.69270833333333vw] tracking-wider">Contact</a>
                 <hr>
                
             </nav>

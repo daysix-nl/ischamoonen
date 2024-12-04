@@ -988,6 +988,9 @@ video {
 .leading-\[6\.10687022900763vw\] {
   line-height: 6.10687022900763vw;
 }
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
 .text-\[\#1E1E1E\] {
   --tw-text-opacity: 1;
   color: rgb(30 30 30 / var(--tw-text-opacity));

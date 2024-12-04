@@ -27,6 +27,7 @@
         opacity: 0;
         transition-duration: 0s;
         transform: translateY(20px);
+        transition-delay: .2s;
 
         @for $i from 2 through 100 {
             &:nth-of-type(#{$i}) {
@@ -64,6 +65,7 @@
             transition-duration: .7s;
 
             transform: translateY(0);
+            transition-delay: .2s;
 
             @media (min-width: 768px) {
                 transition-delay: .5s;

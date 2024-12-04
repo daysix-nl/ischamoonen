@@ -17,7 +17,7 @@
 <main id="main-content" class="bg-[#FFFCF3] invisible">
     <?php the_content();?>
      <section class="my-[3.30788804071247vw] md:my-[1.69270833333333vw] lg:my-[1.71875vw]">
-        <div class="text-center w-full py-[7.63358778625954vw] md:py-[5.20833333333333vw] lg:py-[3.90625vw]"><a href="/#work" class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw]	text-[#1E1E1E] font-medium uppercase">Back to cases overview</a></div>
+        <div class="text-center w-full py-[7.63358778625954vw] md:py-[5.20833333333333vw] lg:py-[3.90625vw]"><a href="/#work" class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw]	text-[#1E1E1E] font-medium uppercase tracking-wider">Back to cases overview</a></div>
     </section>
     <section class="w-full">
         <div class="swiper myservices w-full h-[7.63358778625954vw] md:h-[3.90625vw] lg:h-[2.734375vw] bg-[#1E1E1E] relative">

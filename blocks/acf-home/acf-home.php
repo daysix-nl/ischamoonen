@@ -53,7 +53,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
                         <div class="w-[44.529262086514vw] md:w-[22.7864583333333vw] lg:w-[20.9375vw] h-[63.1043256997455vw] md:h-[32.2916666666667vw] lg:h-[29.609375vw] overflow-hidden">
                             <img src="<?php echo $image1_url; ?>" alt="<?php echo $image1_alt; ?>" class="h-full min-h-full min-w-full object-cover object-center">
                         </div>
-                        <h3 class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw] leading-[3.05343511450382vw] md:leading-[1.5625vw] lg:leading-[0.9375vw] text-[#1E1E1E] font-medium uppercase mt-[2.79898218829517vw] md:mt-[1.43229166666667vw] lg:mt-[0.859375vw]"><span class="font-bold"><?php the_title(); ?></span> <?php if (get_field('category', $post_id)): ?> | <?php echo get_field('category', $post_id);?><?php endif; ?></h3>
+                        <h3 class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw] leading-[3.05343511450382vw] md:leading-[1.5625vw] lg:leading-[0.9375vw] text-[#1E1E1E] font-medium uppercase mt-[2.79898218829517vw] md:mt-[1.43229166666667vw] lg:mt-[0.859375vw] tracking-wider"><span class="font-bold"><?php the_title(); ?></span> <?php if (get_field('category', $post_id)): ?> | <?php echo get_field('category', $post_id);?><?php endif; ?></h3>
                         <p class="text-[2.79898218829517vw] md:text-[1.43229166666667vw] lg:text-[1.09375vw] leading-[3.30788804071247vw] md:leading-[1.69270833333333vw] lg:leading-[1.25vw] mt-[1.27226463104326vw] md:mt-[0.651041666666667vw] lg:mt-[0.390625vw] font-gilda font-normal text-[#1E1E1E]"><?php echo get_field('introduction_text', $post_id);?></p>
                     </div>
                 </a>
@@ -150,7 +150,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
 <!-- SERVICES -->
 <section class="mt-[19.8473282442748vw] md:mt-[11.9791666666667vw] lg:mt-[8.515625vw]">
     <div class="element-fade-in w-[77.791349vw] md:w-[64.41875vw] lg:w-[58.03125vw] mx-auto">
-        <h2 class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw] leading-[3.05343511450382vw] md:leading-[1.5625vw] lg:leading-[0.9375vw] text-[#1E1E1E] font-medium uppercase text-center">Services</h2>
+        <h2 class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw] leading-[3.05343511450382vw] md:leading-[1.5625vw] lg:leading-[0.9375vw] text-[#1E1E1E] font-medium uppercase text-center tracking-wider">Services</h2>
         <h3 class="swift-up-text text-[4.58015267175572vw] md:text-[2.60416666666667vw] lg:text-[2.34375vw] leading-[5.34351145038168vw] md:leading-[3.125vw] lg:leading-[2.734375vw] text-[#1E1E1E] font-normal text-center font-gilda mt-[7.63358778625954vw] md:mt-[3.38541666666667vw] lg:mt-[2.109375vw]"><?php echo get_field('services_title');?></h3>
     </div>
     </section>
@@ -299,7 +299,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
                 <img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>" class="w-full h-auto">
             </div>
             <div class="element-fade-in w-[81.4249363867684vw] md:w-[46.7447916666667vw] lg:w-[37.96875vw] order-1 md:order-2 grid gap-[6.87022900763359vw] md:gap-[3.515625vw] lg:gap-[2.96875vw]">
-                <h2 class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw] leading-[3.05343511450382vw] md:leading-[1.5625vw] lg:leading-[0.9375vw] text-white font-medium uppercase text-center md:text-left">About</h2>
+                <h2 class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw] leading-[3.05343511450382vw] md:leading-[1.5625vw] lg:leading-[0.9375vw] text-white font-medium uppercase text-center md:text-left tracking-wider">About</h2>
                 <h3 class="swift-up-text text-[4.58015267175572vw] md:text-[2.60416666666667vw] lg:text-[2.34375vw] leading-[5.34351145038168vw] md:leading-[3.125vw] lg:leading-[2.734375vw] text-white font-gilda font-normal text-center md:text-left"><?php echo get_field('about_title');?></h3>
                 <div class="border-[#fff] border-t-[0.5px] w-[83.4605597964377vw] md:w-[39.0625vw] lg:w-[23.4375vw] hidden md:block"></div>
                 <p class="block-fade-in w-[71.2468193384224vw] md:w-[47.1354166666667vw] lg:w-[38.1vw] text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.9375vw] leading-[3.56234096692112vw] md:leading-[1.82291666666667vw] lg:leading-[1.40625vw] text-white font-light hidden md:block"><?php echo get_field('about_text');?></p>
@@ -330,7 +330,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
     <div id="contact"></div>
     <section class="contact-footer mt-[20.3562340966921vw] md:mt-[13.0208333333333vw] lg:mt-[9.53125vw]">
     <div class="element-fade-in w-[81.4249363867684vw] md:w-[66.015625vw] lg:w-[57.03125vw] mx-auto">
-        <p class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw] leading-[3.05343511450382vw] md:leading-[1.5625vw] lg:leading-[0.9375vw] text-[#1E1E1E] font-medium uppercase text-center"><b>Email</b> | <a href="mailto:<?php echo get_field('email', 'option');?>"><?php echo get_field('email', 'option');?></a></p>
+        <p class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.78125vw] leading-[3.05343511450382vw] md:leading-[1.5625vw] lg:leading-[0.9375vw] text-[#1E1E1E] font-medium uppercase text-center tracking-wider"><b>Email</b> | <a href="mailto:<?php echo get_field('email', 'option');?>"><?php echo get_field('email', 'option');?></a></p>
         <h3 class="swift-up-text text-[4.58015267175572vw] md:text-[2.60416666666667vw] lg:text-[2.34375vw] leading-[5.34351145038168vw] md:leading-[3.125vw] lg:leading-[2.734375vw] text-[#1E1E1E] font-normal text-center font-gilda mt-[7.63358778625954vw] md:mt-[3.38541666666667vw] lg:mt-[2.109375vw]"><?php echo get_field('contact_title');?></h3>
     </div>
     <div class="contact-fade-in mt-[15.2671755725191vw] md:mt-[10.4166666666667vw] lg:mt-[8.203125vw]">
