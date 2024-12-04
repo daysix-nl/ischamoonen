@@ -160,7 +160,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
         <div class="accordion-group">
             <div class="block-fade-in accordion-item">
                 <button class="accordion text-left">
-                    <span class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] font-normal text-[#1E1E1E] uppercase my-[5.85241730279898vw]"><?php echo get_field('services_title_column_1');?></span>
+                    <span class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] font-normal text-[#1E1E1E] uppercase my-[5.85241730279898vw] tracking-wider"><?php echo get_field('services_title_column_1');?></span>
                 </button>
                 <div class="panel">
                     <div class="border-[#000] border-t-[0.5px]"></div>
@@ -182,7 +182,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
             </div>
             <div class="block-fade-in accordion-item">
                 <button class="accordion text-left">
-                    <span class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] font-normal text-[#1E1E1E] uppercase my-[5.85241730279898vw]"><?php echo get_field('services_title_column_2');?></span>
+                    <span class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] font-normal text-[#1E1E1E] uppercase my-[5.85241730279898vw] tracking-wider"><?php echo get_field('services_title_column_2');?></span>
                 </button>
                 <div class="panel">
                     <div class="border-[#000] border-t-[0.5px]"></div>
@@ -204,7 +204,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
             </div>
             <div class="block-fade-in accordion-item">
                 <button class="accordion text-left">
-                    <span class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] font-normal text-[#1E1E1E] uppercase my-[5.85241730279898vw]"><?php echo get_field('services_title_column_3');?></span>
+                    <span class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] font-normal text-[#1E1E1E] uppercase my-[5.85241730279898vw] tracking-wider"><?php echo get_field('services_title_column_3');?></span>
                 </button>
                 <div class="panel">
                     <div class="border-[#000] border-t-[0.5px]"></div>
@@ -230,7 +230,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
     </div>
     <div class="element-fade-in w-[83.4605597964377vw] md:w-[88.1510416666667vw] lg:w-[83.828125vw] flex-wrap justify-between mx-auto hidden md:flex">
         <div class="block-fade-in w-[83.4605597964377vw] md:w-[27.4vw] lg:w-[23.4375vw]">
-            <h4 class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] text-center font-normal text-[#1E1E1E] uppercase"><?php echo get_field('services_title_column_1');?></h4>
+            <h4 class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] text-center font-normal text-[#1E1E1E] uppercase tracking-wider"><?php echo get_field('services_title_column_1');?></h4>
             <div class="border-[#000] border-t-[0.5px] my-[7.63358778625954vw] md:my-[3.25520833333333vw] lg:my-[1.953125vw]"></div>
             <div class="md:h-[16.9322916666667vw] lg:h-[10.765625vw]">
                 <p class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.9375vw] w-[73.2824427480916vw] md:w-[27.4vw] lg:w-[23.2375vw] mx-auto text-center font-light text-[#1E1E1E]"><?php echo get_field('services_text_column_1');?></p>
@@ -249,7 +249,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
             </ul>
         </div>
         <div class="block-fade-in w-[83.4605597964377vw] md:w-[27.4vw] lg:w-[23.4375vw]">
-            <h4 class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] text-center font-normal text-[#1E1E1E] uppercase"><?php echo get_field('services_title_column_2');?></h4>
+            <h4 class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] text-center font-normal text-[#1E1E1E] uppercase tracking-wider"><?php echo get_field('services_title_column_2');?></h4>
             <div class="border-[#000] border-t-[0.5px] my-[7.63358778625954vw] md:my-[3.25520833333333vw] lg:my-[1.953125vw]"></div>
             <div class="md:h-[16.9322916666667vw] lg:h-[10.765625vw]">
                 <p class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.9375vw] w-[73.2824427480916vw] md:w-[27.4vw] lg:w-[23.2375vw] mx-auto text-center font-light text-[#1E1E1E]"><?php echo get_field('services_text_column_2');?></p>
@@ -268,7 +268,7 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
             </ul>
         </div>
         <div class="block-fade-in w-[83.4605597964377vw] md:w-[27.4vw] lg:w-[23.4375vw]">
-            <h4 class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] text-center font-normal text-[#1E1E1E] uppercase"><?php echo get_field('services_title_column_3');?></h4>
+            <h4 class="text-[3.56234096692112vw] md:text-[1.82291666666667vw] lg:text-[1.71875vw] leading-[4.58015267175572vw] md:leading-[2.34375vw] lg:leading-[2.03125vw] text-center font-normal text-[#1E1E1E] uppercase tracking-wider"><?php echo get_field('services_title_column_3');?></h4>
             <div class="border-[#000] border-t-[0.5px] my-[7.63358778625954vw] md:my-[3.25520833333333vw] lg:my-[1.953125vw]"></div>
             <div class="md:h-[16.9322916666667vw] lg:h-[10.765625vw]">
                 <p class="text-[2.54452926208651vw] md:text-[1.30208333333333vw] lg:text-[0.9375vw] w-[73.2824427480916vw] md:w-[27.4vw] lg:w-[23.2375vw] mx-auto text-center font-light text-[#1E1E1E]"><?php echo get_field('services_text_column_3');?></p>
