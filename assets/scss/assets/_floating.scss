@@ -55,7 +55,7 @@
 
             @for $i from 2 through 100 {
                 &:nth-of-type(#{$i}) {
-                    transition-delay: .1s * $i;
+                    transition-delay: .2s * $i;
                 }
             }
         }
@@ -68,7 +68,7 @@
             transition-delay: .2s;
 
             @media (min-width: 768px) {
-                transition-delay: .5s;
+                transition-delay: .9s;
             }
 
         }
