@@ -1,47 +1,99 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const swiftUpElements = document.querySelectorAll('.swift-up-text');
-    console.log(`Aantal swift-up-text elementen: ${swiftUpElements.length}`); // Debugging
 
-    try {
-        swiftUpElements.forEach(elem => {
-            if (elem.dataset.processed) return; // Skip als het al verwerkt is
-            elem.dataset.processed = true; // Markeer als verwerkt
+try {
+    document.addEventListener("DOMContentLoaded", () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        const mainContent = document.getElementById('main-content');
+        const loadingCounter = document.getElementById('loading-counter');
 
-            const words = elem.textContent.split(' ');
-            elem.innerHTML = '';
+        let counter = 1;
+        const maxCount = 99;
 
-            words.forEach((word, index) => {
-                words[index] = `<span><span class="i">${word}</span></span>`;
-            });
+        function initializeSwiftUpElements() {
+            try {
+                const swiftUpElements = document.querySelectorAll('.swift-up-text');
+                console.log(`Aantal swift-up-text elementen: ${swiftUpElements.length}`); // Debugging
 
-            elem.innerHTML = words.join(' ');
+                swiftUpElements.forEach(elem => {
+                    if (elem.dataset.processed) return; // Skip als het al verwerkt is
+                    elem.dataset.processed = true; // Markeer als verwerkt
 
-            const children = elem.querySelectorAll('span > span');
-            children.forEach((node, index) => {
-                node.style.animationDelay = `${index * 0.02}s`;
-            });
-        });
-    } catch (error) {
-        console.error("Error in swiftUpElements processing:", error);
-    }
+                    const words = elem.textContent.split(' ');
+                    elem.innerHTML = '';
 
-    try {
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    console.log(`Element in zicht: ${entry.target}`); // Debugging
-                    entry.target.classList.add("show");
-                    observer.unobserve(entry.target); // Stop observer voor dit element
+                    words.forEach((word, index) => {
+                        words[index] = `<span><span class="i">${word}</span></span>`;
+                    });
+
+                    elem.innerHTML = words.join(' ');
+
+                    const children = elem.querySelectorAll('span > span');
+                    children.forEach((node, index) => {
+                        node.style.animationDelay = `${index * 0.02}s`;
+                    });
+                });
+            } catch (error) {
+                console.error("Error in swiftUpElements processing:", error);
+            }
+        }
+
+        function initializeObserver() {
+            try {
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            console.log(`Element in zicht: ${entry.target}`); // Debugging
+                            entry.target.classList.add("show");
+                            observer.unobserve(entry.target); // Stop observer voor dit element
+                        }
+                    });
+                });
+
+                const hiddenElements = document.querySelectorAll(".element-fade-in");
+                hiddenElements.forEach((el) => observer.observe(el));
+            } catch (error) {
+                console.error("Error in IntersectionObserver:", error);
+            }
+        }
+
+        // Controleer of de gebruiker al eerder op de pagina is geweest
+        if (!sessionStorage.getItem('hasVisited')) {
+            // Toon het laadscherm
+            loadingScreen.classList.add('show');
+
+            // Start teller
+            let interval = setInterval(() => {
+                if (counter < maxCount) {
+                    counter++;
+                    loadingCounter.textContent = counter.toString().padStart(2, '0'); // Zorgt voor 01, 02, etc.
+                } else {
+                    clearInterval(interval);
+                    // Verberg het laadscherm
+                    loadingScreen.classList.remove('show');
+                    setTimeout(() => {
+                        // Toon de hoofdinhoud na het verwijderen van het laadscherm
+                        mainContent.classList.add('show');
+
+                        // Initialiseer de functionaliteiten
+                        initializeSwiftUpElements();
+                        initializeObserver();
+                    }, 100); // Wacht tot het laadscherm is verdwenen
                 }
-            });
-        });
+            }, 30); // Interval van 50ms voor snelle telling
 
-        const hiddenElements = document.querySelectorAll(".element-fade-in");
-        hiddenElements.forEach((el) => observer.observe(el));
-    } catch (error) {
-        console.error("Error in IntersectionObserver:", error);
-    }
-});
+            // Markeer als bezocht in de sessie
+            sessionStorage.setItem('hasVisited', 'true');
+        } else {
+            // Verberg het laadscherm en toon direct de inhoud
+            loadingScreen.classList.remove('show');
+            mainContent.classList.add('show');
+
+            // Initialiseer direct de functionaliteiten
+            initializeSwiftUpElements();
+            initializeObserver();
+        }
+    });
+} catch (error) { }
+
 
 
 
@@ -81,27 +133,41 @@ try {
     });
 
     // Standaard cursor inhoud
-    cursor.textContent = '';
+    cursor.innerHTML = '';
+
+    let textTimeout; // Timer om de delay te beheren
 
     // Hover-effect voor links
     links.forEach(link => {
         link.addEventListener('mouseenter', () => {
-            cursor.textContent = 'View case'; // Toon tekst van de link
-            cursor.style.padding = '0px 20px';
+            // Voeg de basisstructuur toe zonder tekst
+            cursor.innerHTML = '<div class="border-[0.5px] inner-button rounded-full w-full h-full flex justify-center items-center"><p class="lg:text-[0.8vw] mb-[1px]"></p></div>';
+            cursor.style.width = '6vw';
+            cursor.style.padding = '0.35vw';
             cursor.style.borderRadius = '999px';
-            cursor.style.height = '50px';
+            cursor.style.height = '2.5vw';
             cursor.style.transform = 'translate(0%, -50%)';
+
+            // Voeg de tekst toe na een delay
+            const p = cursor.querySelector('p');
+            textTimeout = setTimeout(() => {
+                p.textContent = 'view case';
+            }, 100); // Delay van 100ms
         });
 
         link.addEventListener('mouseleave', () => {
-            cursor.textContent = ''; // Herstel oorspronkelijke inhoud
-            cursor.style.padding = '0px 0px';
+            // Reset inhoud en verwijder eventuele actieve timers
+            clearTimeout(textTimeout);
+            cursor.innerHTML = ''; // Herstel oorspronkelijke inhoud
+            cursor.style.width = '15px';
+            cursor.style.padding = '0px';
             cursor.style.borderRadius = '999px';
             cursor.style.height = '15px';
             cursor.style.transform = 'translate(-50%, -50%)';
         });
     });
 } catch (error) { }
+
 
 
 
@@ -244,5 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //         .map((line, index) => `<span style="--line-index: ${index}">${line}</span>`)
 //         .join('');
 // });
+
+
 
 

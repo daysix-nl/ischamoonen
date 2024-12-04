@@ -35,6 +35,16 @@
         }
     }
 
+    .delayed-animation {
+        opacity: 0;
+        transition-duration: 0s;
+        transform: translateY(15px);
+
+        @media (min-width: 768px) {
+            transition-delay: .5s;
+        }
+    }
+
     &.show {
         .block-fade-in {
             opacity: 1;
@@ -47,6 +57,18 @@
                     transition-delay: .1s * $i;
                 }
             }
+        }
+
+        .delayed-animation {
+            opacity: 1;
+            transition-duration: .7s;
+
+            transform: translateY(0);
+
+            @media (min-width: 768px) {
+                transition-delay: .5s;
+            }
+
         }
     }
 }

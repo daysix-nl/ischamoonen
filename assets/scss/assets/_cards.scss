@@ -15,7 +15,7 @@
         align-items: flex-start;
         position: relative;
         transition: transform 0s ease;
-        border-top: 1px solid #000;
+        border-top: 0.5px solid #000;
 
         &::after {
             content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none"%3E%3Cpath d="M2.06071 0.646447C1.86544 0.451184 1.54886 0.451184 1.3536 0.646447C1.15834 0.841709 1.15834 1.15829 1.3536 1.35355L2.06071 0.646447ZM1.3536 1.35355L10.3536 10.3536L11.0607 9.64645L2.06071 0.646447L1.3536 1.35355Z" fill="%2308212C"/%3E%3Cpath d="M0.646447 18.6464C0.451184 18.8417 0.451184 19.1583 0.646447 19.3536C0.841709 19.5488 1.15829 19.5488 1.35355 19.3536L0.646447 18.6464ZM1.35355 19.3536L10.3536 10.3536L9.64645 9.64645L0.646447 18.6464L1.35355 19.3536Z" fill="%2308212C"/%3E%3C/svg%3E');
@@ -26,7 +26,7 @@
             /* Dit zorgt ervoor dat de rotatie om het midden plaatsvindt */
             transition: transform 0.2s ease;
             /* Optioneel: voor een soepele animatie */
-            top: 44%;
+            top: calc(50% - 10px);
             right: 2.29007633587786vw;
         }
     }
@@ -69,8 +69,24 @@
 }
 
 
-.case {
-    .accordion::after {
-        top: 40%;
+// .case {
+//     .accordion::after {
+//         top: calc(50% - 10px);
+//         transform-origin: center center;
+//     }
+// }
+
+
+a.swiper-slide {
+    img {
+        scale: 1;
+        transition-duration: .3s;
+    }
+}
+
+a.swiper-slide:hover {
+    img {
+        scale: 1.05;
+        transition-duration: .3s;
     }
 }

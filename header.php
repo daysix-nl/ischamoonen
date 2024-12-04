@@ -22,8 +22,14 @@
     <title><?php if (is_front_page() || is_home()) { bloginfo('name'); echo ' - '; bloginfo('description'); } else { wp_title(''); echo ' - '; bloginfo('name'); } ?></title>
     <?php wp_head(); ?>
 </head>
+<style>
+    .inner-button {
+        border-color: <?php echo get_field('cursor_text_color', 'option');?>;
+        color: <?php echo get_field('cursor_text_color', 'option');?>;
+    }
+</style>
 <body <?php body_class( 'page-block mobilemenu-nonactive ischamoonen' ); ?>>
-<div class="custom-cursor h-[15px] min-w-[15px] duration-300 ease-out text-13 font-helvetica uppercase font-medium"></div>
+<div class="custom-cursor h-[15px] min-w-[15px] duration-300 ease-out text-13 font-helvetica font-medium flex justify-center items-center" style="background:<?php echo get_field('cursor_color', 'option');?>"></div>
 <header class="w-full fixed top-0 left-0 right-0 bg-[#FFFCF3] z-[9997]">
     <div class="w-[93.1297709923664vw] md:w-[97.5260416666667vw] lg:w-[94.6875vw] mx-auto h-[13.4860050890585vw] md:h-[7.55208333333333vw] lg:h-[6.953125vw] flex items-center justify-between">
         <div class="w-[30.2798982188295vw] md:w-[15.4947916666667vw] lg:w-[25.78125vw] h-[6.10687022900763vw] md:h-[3.125vw] lg:h-[2.109375vw] flex justify-start">
@@ -55,7 +61,7 @@
 
 
 <!-- MOBIEL MENU -->
-    <div id="mobiel-menu" class="h-fit w-fit lg:hidden z-[9999] fixed top-[4.32569974554707vw] md:top-[2.6vw] right-[3.30788804071247vw] md:right-[2.34375vw]">
+    <div id="mobiel-menu" class="w-fit lg:hidden z-[9999] fixed top-0 h-[13.4860050890585vw] md:h-[7.55208333333333vw] lg:h-[6.953125vw] right-[3.30788804071247vw] md:right-[2.34375vw] flex items-center">
         <div class="menu-btn h-auto">
             <span></span>                
         </div>

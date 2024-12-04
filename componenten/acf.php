@@ -57,3 +57,5 @@
 <div class="drop-shadow-[0px_0px_15px_#8CC63F]"></div>
 
 <div class="pb-[30px] md:pb-[50px] lg:pb-[80px]"></div>
+
+<div class="border-[1px] border-[#000] rounded-full w-full h-full flex justify-center items-center"><p class="lg:text-[0.8vw] mb-[1px]">view case</p></div>

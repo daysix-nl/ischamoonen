@@ -1,0 +1,27 @@
+/* Zorg ervoor dat het laadscherm de volledige pagina bedekt */
+#loading-screen {
+    display: none;
+
+    &.show {
+        display: flex;
+        /* Achtergrondkleur van het laadscherm */
+    }
+}
+
+#main-content {
+    opacity: 0;
+    height: 0;
+    /* Maak de inhoud onzichtbaar */
+    visibility: hidden;
+    /* Zorg dat het niet klikbaar is */
+    transition: opacity 0.5s ease-in-out;
+    /* Optionele fade-in */
+}
+
+#main-content.show {
+    opacity: 1;
+    height: unset;
+    /* Toon de inhoud */
+    visibility: visible;
+    /* Maak het interactief */
+}

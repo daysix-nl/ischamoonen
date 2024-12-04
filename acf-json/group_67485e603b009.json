@@ -3,6 +3,44 @@
     "title": "Company settings",
     "fields": [
         {
+            "key": "field_675014c73207f",
+            "label": "Cursor background color",
+            "name": "cursor_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#887965",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_6750205c8bba4",
+            "label": "Cursor text color",
+            "name": "cursor_text_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0
+        },
+        {
             "key": "field_67485e60e0f14",
             "label": "E-mail",
             "name": "email",
@@ -88,5 +126,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1732796125
+    "modified": 1733304455
 }
