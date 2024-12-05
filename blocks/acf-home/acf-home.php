@@ -60,6 +60,22 @@ $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
             <?php endwhile; wp_reset_query(); ?>
 
         </div>
+         <div class="swiper-button-next hidden lg:block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76">
+                <g id="Group_2016" data-name="Group 2016" transform="translate(-120.5 -3255.979)">
+                <path id="Path_77" data-name="Path 77" d="M38,0A38,38,0,1,1,0,38,38,38,0,0,1,38,0Z" transform="translate(120.5 3255.979)" fill="#1E1E1E"/>
+                <path id="arrow-sm-right-svgrepo-com" d="M16.525,23.739h28.8m0,0L28.589,7m18.2,15.4-18.2,18.078" transform="translate(126.644 3270.24)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"/>
+                </g>
+            </svg>
+        </div>
+        <div class="swiper-button-prev hidden lg:block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76">
+                <g id="Group_2017" data-name="Group 2017" transform="translate(-39.5 -3255.979)">
+                <path id="Path_76" data-name="Path 76" d="M38,0A38,38,0,1,1,0,38,38,38,0,0,1,38,0Z" transform="translate(39.5 3255.979)" fill="#1E1E1E"/>
+                <path id="arrow-sm-right-svgrepo-com" d="M16.525,23.739h28.8m0,0L28.589,7m18.2,15.4-18.2,18.078" transform="translate(111.293 3317.718) rotate(180)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"/>
+                </g>
+            </svg>
+        </div>
     </div>
 </section>
 

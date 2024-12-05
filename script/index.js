@@ -101,6 +101,10 @@ try {
     var swiper = new Swiper(".mycases", {
         slidesPerView: "auto",
         freeMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
 } catch (error) { }
 

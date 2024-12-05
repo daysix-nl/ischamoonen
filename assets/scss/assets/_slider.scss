@@ -1,4 +1,37 @@
-// .swiper-free-mode>.swiper-wrapper {
-//     transition-timing-function: linear !important;
-//     margin: 0 auto;
-// }
+.swiper-free-mode>.swiper-wrapper {
+    transition-timing-function: linear !important;
+    margin: 0 auto;
+}
+
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: "" !important;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0 !important;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.mycases {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+
+        opacity: 0;
+        transition-duration: .3s;
+    }
+}
+
+.mycases:hover {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+
+        opacity: 1;
+        transition-duration: .3s;
+    }
+}
